@@ -5,6 +5,10 @@ import xgboost as xgb
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Step 1: Load Data (Stock Prices & Google Trends)
 def get_stock_data(ticker, start_date, end_date):
